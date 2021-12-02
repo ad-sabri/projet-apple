@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$font: 'Lato', sans-serif;
+
+nav {
+    /*background-color: rgb(58, 57, 57); */
+    
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        
+        li {
+            display: flex;
+            background-color: rgb(22, 5, 119);
+            color:white;
+            font-family: $font;
+            flex-grow: 1;
+            align-self: center;
+        }
+    }
+
+    
+}
