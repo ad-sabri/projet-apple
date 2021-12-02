@@ -3,8 +3,22 @@
   padding: 0;
 }
 
+body {
+  /*background-color: rgb(175, 148, 168);*/
+  font-family: "Lato", sans-serif;
+}
+
 nav {
   /*background-color: rgb(58, 57, 57); */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #323232;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 nav ul {
@@ -12,19 +26,20 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 70%;
 }
 
 nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #160577;
   color: white;
   font-family: "Lato", sans-serif;
   -webkit-box-flex: 1;
@@ -32,5 +47,187 @@ nav ul li {
           flex-grow: 1;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.bandeau {
+  background-color: #e34140;
+  color: white;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  text-align: center;
+}
+
+.red {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../images/red.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 950px;
+  background-size: cover;
+}
+
+.text-red {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 70px;
+}
+
+h1 a, h2 a, h3 a {
+  color: blue;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+  text-decoration: underline;
+}
+
+.holidays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.holidays img {
+  height: 90px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.holidays .text-holidays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.holidays .shop {
+  background-color: blue;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.products {
+  /*background-color: lightsalmon; */
+  padding-left: 300px;
+  padding-right: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products .element {
+  height: 480px;
+  min-width: 200px;
+  width: 30%;
+  border: 1px solid #f0eeee;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+}
+
+.products #iphone {
+  background-image: url("../images/iphone-holidays.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.products #iphone:hover {
+  background-image: url("../images/zoom-iphone.png");
+  background-size: cover;
+}
+
+.products #airpod {
+  background-image: url("../images/airpods.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products #airpod:hover {
+  background-image: url("../images/zoom-airpods.jpg");
+  background-size: cover;
+}
+
+.products #watch {
+  background-image: url("../images/watch-holidays.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products #watch:hover {
+  background-image: url("../images/zoom-watch.jpg");
+  background-size: cover;
+}
+
+.products #homepod {
+  background-image: url("../images/homepod.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products #ipad {
+  background-image: url("../images/ipad.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.products #pro {
+  background-image: url("../images/macpro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */

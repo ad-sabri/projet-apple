@@ -5,24 +5,174 @@
 
 $font: 'Lato', sans-serif;
 
+body {
+    /*background-color: rgb(175, 148, 168);*/
+    font-family: $font;
+}
 nav {
     /*background-color: rgb(58, 57, 57); */
-    
+    display: flex;
+    justify-content: center;
+    background-color: rgb(50,50,50);
+    padding-top: 11px;
+    padding-bottom: 11px;
+   
     ul {
         list-style: none;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: row;
+        width: 70%;
         
         li {
-            display: flex;
-            background-color: rgb(22, 5, 119);
+            display: flex;  
             color:white;
             font-family: $font;
             flex-grow: 1;
             align-self: center;
         }
+    }    
+}
+
+.bandeau {
+    background-color: rgb(227,65,64);
+    color: white;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-align: center;
+}
+.red {
+    display: flex;
+    background-image: url("../images/red.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 950px;
+    background-size: cover;
+}
+
+.text-red {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: $font;
+    font-size: 70px;
+
+    a {
+        color: blue;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.holidays {
+    display: flex;
+    padding-bottom: 100px;
+
+    img {
+        height: 90px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+
+    }
+    .text-holidays {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
     }
 
-    
+    .shop {
+        background-color: blue;
+        border-radius: 20px;
+        padding: 10px;
+        color: white;
+    }
 }
+
+.products {
+    /*background-color: lightsalmon; */
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    flex-wrap: wrap;  
+    .element {
+        height: 480px;
+        min-width: 200px;
+        width: 30%;
+        border: 1px solid rgb(240, 238, 238);
+        margin: 10px;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center; 
+        border-radius: 20px;    
+    }
+
+    #iphone {
+        background-image: url("../images/iphone-holidays.png");
+        background-position: center;
+        background-repeat: no-repeat;  
+
+        &:hover {
+            background-image: url("../images/zoom-iphone.png");
+            background-size: cover;
+        }
+    }
+
+    #airpod {
+        background-image: url("../images/airpods.jpg");
+        background-position: center;
+        background-repeat: no-repeat;    
+        background-size: cover;
+        
+        &:hover {
+            background-image: url("../images/zoom-airpods.jpg");
+            background-size: cover;
+        }
+    }
+
+    #watch {
+        background-image: url("../images/watch-holidays.jpg");
+        background-position: center;
+        background-repeat: no-repeat;   
+        background-size: cover;  
+        
+        &:hover {
+            background-image: url("../images/zoom-watch.jpg");
+            background-size: cover;
+        }
+    }
+
+    #homepod {
+        background-image: url("../images/homepod.png");
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover;   
+    }
+
+    #ipad {
+        background-image: url("../images/ipad.jpg");
+        background-position: center;
+        background-repeat: no-repeat;    
+        background-size: cover;
+    }
+
+    #pro {
+        background-image: url("../images/macpro.jpg");
+        background-position: center;
+        background-repeat: no-repeat;  
+        background-size: cover;
+    }
+}
+
