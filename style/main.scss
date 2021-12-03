@@ -1,33 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
-$font: 'Lato', sans-serif;
+$font:'Lato', cursive;
+$blue-apple: rgb(41,148,255);
 
 body {
-    /*background-color: rgb(175, 148, 168);*/
-    font-family: $font;
+    background-color: rgb(245,245,247);
+
 }
+
 nav {
     /*background-color: rgb(58, 57, 57); */
     display: flex;
+    //position: fixed;
     justify-content: center;
     background-color: rgb(50,50,50);
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 15px;
+    padding-bottom: 15px;
    
     ul {
         list-style: none;
         display: flex;
         justify-content: center;
         flex-direction: row;
-        width: 70%;
+        width: 50%;
+
         
         li {
+
             display: flex;  
-            color:white;
+            color: rgb(225, 228, 228);
             font-family: $font;
+            font-weight:100;
+            font-size: 12px;
             flex-grow: 1;
             align-self: center;
         }
@@ -36,10 +45,12 @@ nav {
 
 .bandeau {
     background-color: rgb(227,65,64);
-    color: white;
+    color: rgb(213,214,214);
     padding-top: 17px;
     padding-bottom: 17px;
+    font-size: 15px;
     text-align: center;
+    font-family: $font;
 }
 .red {
     display: flex;
@@ -62,10 +73,11 @@ nav {
 h1, h2, h3 {
     text-align: center;
     font-family: $font;
+    font-weight: 600;
     font-size: 70px;
 
     a {
-        color: blue;
+        color: $blue-apple;
         text-decoration: none;
         font-size: 30px;
     }
@@ -77,6 +89,7 @@ h1, h2, h3 {
 .holidays {
     display: flex;
     padding-bottom: 100px;
+    background-color: white;
 
     img {
         height: 90px;
@@ -90,6 +103,10 @@ h1, h2, h3 {
         flex-grow: 1;
         justify-content: center;
         align-items: center;
+
+        h1 {
+            font-family: $font;
+        }
     }
 
     .shop {
@@ -101,7 +118,8 @@ h1, h2, h3 {
 }
 
 .products {
-    /*background-color: lightsalmon; */
+    background-color: white; 
+    padding-bottom: 200px;
     padding-left: 300px;
     padding-right: 300px;
     display: flex;
@@ -127,6 +145,8 @@ h1, h2, h3 {
         &:hover {
             background-image: url("../images/zoom-iphone.png");
             background-size: cover;
+            
+            
         }
     }
 
@@ -159,6 +179,11 @@ h1, h2, h3 {
         background-position: center;
         background-repeat: no-repeat; 
         background-size: cover;   
+
+        &:hover {
+            background-image: url("../images/zoom-homepod.jpg");
+            background-size: cover;
+        }
     }
 
     #ipad {
@@ -166,13 +191,93 @@ h1, h2, h3 {
         background-position: center;
         background-repeat: no-repeat;    
         background-size: cover;
+
+        &:hover {
+            background-image: url("../images/zoom-ipad.jpg");
+            background-size: cover;
+            transition-timing-function: ease-in-out;
+
+        }
     }
 
     #pro {
-        background-image: url("../images/macpro.jpg");
+        background-image: url("../images/macpro2.jpg");
         background-position: center;
-        background-repeat: no-repeat;  
+        background-repeat: no-repeat;    
         background-size: cover;
+        
+        &:hover {
+            background-image: url("../images/zoom-pro2.jpg");
+            background-size: cover;
+        }
+    }   
+}
+
+.infos {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-bottom: 100px;
+    /*margin: 100px 200px 100px 200px;*/
+    padding: 0 400px;
+    
+    .text {
+        //background-color: coral;
+        display: flex;
+        padding: 30px;
+        width: 40%;
+        min-width: 200px;
+        flex-wrap: wrap;  
+        flex-direction: column;
+        flex-grow: 1;  
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+
+        p {
+            //background-color: yellowgreen;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            min-width: 200px;
+            flex-grow: 1;  
+            font-family: $font; 
+            font-weight:800;
+            font-size: 30px;
+                
+            
+            #smile {
+                color: $blue-apple;
+                margin: 40px;
+            }
+
+            #montre {
+                color: rgb(172,57,255);
+                margin: 40px;
+            }
+        }
+
+        a {
+            //background-color: red;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            min-width: 200px;
+            padding: 20px;
+            flex-grow: 1;  
+            font-family: $font;   
+            color: $blue-apple;   
+            text-decoration: none; 
+
+            :hover {
+                text-decoration: underline;
+            }
+        }
+
+
     }
 }
 
